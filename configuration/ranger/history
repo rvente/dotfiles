@@ -1,0 +1,16 @@
+open_with 
+shell rm -rf %s
+find et
+find xd
+
+shell wget https://raw.githubusercontent.com/vivien/i3blocks-contrib/master/temperature/temperature
+shell touch temperature
+open_with vim
+shell rm .git
+find X
+find x
+search x
+shell rm %s
+shell sudo tm
+find va
+find log

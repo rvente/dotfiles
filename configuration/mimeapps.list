@@ -1,0 +1,20 @@
+[Default Applications]
+x-scheme-handler/http=chromium.desktop
+text/html=chromium.desktop
+text/xml=chromium.desktop
+application/xhtml+xml=chromium.desktop
+text/mml=chromium.desktop
+x-scheme-handler/https=chromium.desktop
+
+[Added Associations]
+text/html=atom.desktop;chromium.desktop;
+text/xml=chromium.desktop;
+application/xhtml+xml=chromium.desktop;
+text/mml=chromium.desktop;
+x-scheme-handler/https=chromium.desktop;
+image/png=darktable.desktop;
+application/pdf=zathura-pdf-poppler.desktop;
+application/x-yaml=atom.desktop;
+text/markdown=atom.desktop;
+text/css=atom.desktop;
+application/javascript=atom.desktop;
