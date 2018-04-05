@@ -23,7 +23,6 @@ latin-words
 libcompizconfig
 libcurl-openssl-1.0
 libsearpc
-mono-stable
 neofetch
 nuget4
 nvdock
@@ -58,11 +57,9 @@ vala-panel-appmenu-xfce-git
 vala-panel-git
 vim-plug
 wacom-utility
-webcamoid
-wii-u-gc-adapter
 xf86-input-joystick
 xfce4-windowck-plugin
 xpacman2
 xrestrict-git
+zathura-pdf-poppler
 zathura-epub-git
-zotero
