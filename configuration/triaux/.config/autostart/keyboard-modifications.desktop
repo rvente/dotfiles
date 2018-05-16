@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=keyboard-modifications
+Exec=setxkbmap -option 'caps:ctrl_modifier' && xcape -e 'Caps_Lock=Escape'
+

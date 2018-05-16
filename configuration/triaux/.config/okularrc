@@ -1,0 +1,13 @@
+[Desktop Entry]
+FullScreen=false
+
+[MainWindow]
+Height 2000=710
+State=AAAA/wAAAAD9AAAAAAAAC7gAAAbTAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+Width 3000=640
+Window-Maximized 2000x3000=true
+
+[Recent Files]
+File1[$e]=$HOME/github/Programming/CSCI 136/articleFormatSomeImagesIncorrect.pdf
+Name1[$e]=articleFormatSomeImagesIncorrect.pdf

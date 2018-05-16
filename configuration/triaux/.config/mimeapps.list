@@ -1,0 +1,26 @@
+[Default Applications]
+inode/directory=org.pantheon.files.desktop
+x-scheme-handler/trash=org.pantheon.files.desktop
+x-scheme-handler/http=opera.desktop
+text/html=opera.desktop
+text/xml=opera.desktop
+application/xhtml+xml=firefox.desktop
+application/vnd.mozilla.xul+xml=firefox.desktop
+text/mml=firefox.desktop
+x-scheme-handler/https=opera.desktop
+x-scheme-handler/about=opera.desktop
+x-scheme-handler/unknown=opera.desktop
+application/xhtml_xml=opera.desktop
+x-scheme-handler/ftp=opera.desktop
+application/x-opera-download=opera.desktop
+
+[Added Associations]
+inode/directory=org.pantheon.files.desktop;
+x-scheme-handler/trash=org.pantheon.files.desktop;
+text/html=firefox.desktop;opera.desktop;
+application/x-mswinurl=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;opera.desktop;
+text/xml=opera.desktop;
+application/xhtml_xml=opera.desktop;
+x-scheme-handler/ftp=opera.desktop;
+application/x-opera-download=opera.desktop;
