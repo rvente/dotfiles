@@ -143,7 +143,7 @@ values."
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
    dotspacemacs-default-font '("inconsolata"
-                               :size 13
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -227,7 +227,7 @@ values."
    ;; If non nil a progress bar is displayed when spacemacs is loading. This
    ;; may increase the boot time on some systems and emacs builds, set it to
    ;; nil to boost the loading time. (default t)
-   dotspacemacs-loading-progress-bar t
+   dotspacemacs-loading-progress-bar nil
    ;; If non nil the frame is fullscreen when Emacs starts up. (default nil)
    ;; (Emacs 24.4+ only)
    dotspacemacs-fullscreen-at-startup nil
@@ -323,8 +323,6 @@ before packages are loaded. If you are unsure, you should try in setting them in
           (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
   (add-hook 'LaTeX-mode-hook 'flymake-mode)
 
-  ;; autoinit centered cursor
-  ('centered-cursor-mode 1)
   )
 
 (defun dotspacemacs/user-config ()
@@ -340,18 +338,18 @@ you should place your code here."
   (add-hook 'text-mode-hook 'turn-on-flyspell)
 
   ;; Writeroom for Text Mode: https://github.com/joostkremers/writeroom-mode
-  (setq-default dotspacemacs-configuration-layers '(writeroom))
+  ;;(setq-default dotspacemacs-configuration-layers '(writeroom))
   ;;(add-hook 'text-mode-hook 'global-writeroom-mode);; comment to disable autofullscreen
   (add-hook 'text-mode-hook 'writeroom-mode)
-
-
-  ;; centered cursor mode
-  ;;(add-hook 'text-mode-hook 'centered-cursor-mode)
 
   ;; TeX config
   (eval-after-load "preview"
     '(add-to-list 'preview-default-preamble "\\PreviewEnvironment{tikzpicture}" t)
   )
+  ;; preview tables
+  (eval-after-load "preview"
+    '(add-to-list 'preview-default-preamble "\\PreviewEnvironment{tabular}" t)
+    )
 
   )
 
