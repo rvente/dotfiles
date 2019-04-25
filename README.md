@@ -1,8 +1,8 @@
-## Dotfiles!
+## dotfiles
 
-the folder "configuration" contains files that should be extracted to ~/.config
-to install all packages, do
+The folder "dotconfig" contains files that should be moved to ~/.config
 
-`xargs -a Packages pacman -S --noconfirm --needed`
+To install all packages, do
 
-xargs must be installed.
+`sudo pacman -S xargs && xargs -a Packages pacman -S --noconfirm --needed`
+
