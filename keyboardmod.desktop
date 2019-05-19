@@ -1,9 +1,0 @@
-[Desktop Entry]
-Type=Application
-Vestion=1.0
-Name=Keyboard Configuration
-Comment=keyboard startup script
-Exec=/home/osiris/.xprofile
-StartupNotify=false
-Terminal=false
-X-GNOME-Autostart-enabled=true

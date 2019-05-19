@@ -10,7 +10,7 @@
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod1
-set $mod2 Mod4
+#set $mod2 Mod4
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -31,7 +31,7 @@ font pango:'Inconsolata-dz for powerline dz' 12
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec gnome-terminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -41,7 +41,10 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+# bindsym $mod+d exec --no-startup-id j4-dmenu-desktop
+bindsym $mod+a exec rofi -show file-browser -theme arc-dark
+bindsym $mod+d exec rofi -show run -theme arc-dark
+bindsym $mod+s exec rofi -show window -theme arc-dark
 
 # change focus
 bindsym $mod+h focus left
@@ -77,7 +80,7 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
+#$bindsym $mod+s layout stacking
 bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
@@ -88,7 +91,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+bindsym $mod+p focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -107,16 +110,6 @@ bindsym $mod+0 workspace 10
 bindsym Mod1+Tab workspace next
 bindsym Mod1+Shift+Tab workspace prev
 
-# bindsym $mod2+a workspace 1
-# bindsym $mod2+s workspace 2
-# bindsym $mod2+d workspace 3
-# bindsym $mod2+f workspace 4
-# bindsym $mod2+g workspace 5
-# bindsym $mod2+h workspace 6
-# bindsym $mod2+j workspace 7
-# bindsym $mod2+l workspace 8
-# bindsym $mod2+k workspace 9
-# bindsym $mod2+semicolon workspace 10
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
@@ -141,24 +134,24 @@ bindsym $mod+n exec nm-connection-manager
 
 # resize window (you can also use the mouse for that)
 mode "" {
-        # These bindings trigger as soon as you enter the resize mode
+        # these bindings trigger as soon as you enter the resize mode
 
-        # Pressing left will shrink the window’s width.
-        # Pressing right will grow the window’s width.
-        # Pressing up will shrink the window’s height.
-        # Pressing down will grow the window’s height.
+        # pressing left will shrink the window’s width.
+        # pressing right will grow the window’s width.
+        # pressing up will shrink the window’s height.
+        # pressing down will grow the window’s height.
         bindsym h resize shrink width 5 px or 5 ppt
         bindsym j resize grow height 5 px or 5 ppt
         bindsym k resize shrink height 5 px or 5 ppt
         bindsym l resize grow width 5 px or 5 ppt
 
         # same bindings, but for the arrow keys
-        bindsym Left resize shrink width 5 px or 5 ppt
-        bindsym Down resize grow height 5 px or 5 ppt
-        bindsym Up resize shrink height 5 px or 5 ppt
-        bindsym Right resize grow width 5 px or 5 ppt
+        bindsym left resize shrink width 5 px or 5 ppt
+        bindsym down resize grow height 5 px or 5 ppt
+        bindsym up resize shrink height 5 px or 5 ppt
+        bindsym right resize grow width 5 px or 5 ppt
 
-        # back to normal: Enter or Escape
+        # back to normal: enter or escape
         bindsym Return mode "default"
         bindsym Escape mode "default"
 }
@@ -174,18 +167,35 @@ set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
 set $urgent-bg-color     #E53935
 
+# screenlock
+bindsym XF86ScreenSaver            exec i3lock
+bindsym XF86Sleep                  exec i3lock
+bindsym $mod+Shift+s exec "i3lock && systemctl suspend"
+
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsyf XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
 
 # Sreen brightness controls
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
+bindsym XF86MonBrightnessUp exec xbacklight -inc 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 5 # decrease screen brightness
 
 # keyboard bindings
-exec_always "setxkbmap -layout us,us -variant alt-intl"
-exec_always "setxkbmap -option 'grp:alt_space_toggle'"
+
+# lang mode definition
+mode "lang" {
+        bindsym i exec "setxkbmap -layout us -variant alt-intl", mode "default"
+        bindsym e exec "setxkbmap -layout us", mode "default"
+
+        # back to normal: enter or escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+o mode "lang"
+
 
 # Media player controls
 #bindsym XF86AudioPlay exec playerctl play
@@ -234,6 +244,7 @@ exec_always xcape -e 'Caps_Lock=Escape'
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper.png
 exec_always xset dpms 0 1900 2400
 #exec_always compton --config ~/.config/compton.conf -b
+exec_always echo -e 'power on\nquit' | bluetoothctl
 
 # Enable Natural Scrolling
 exec_always xinput set-prop 10 "libinput Natural Scrolling Enabled" 1
@@ -242,3 +253,28 @@ smart_gaps on
 gaps inner 20
 gaps outer 0
 
+
+mode "gaps" {
+        bindsym t gaps inner all set 20
+        bindsym f gaps inner all set 0
+
+        bindsym k gaps inner all plus 5
+        bindsym j gaps inner all minus 5
+
+        # back to normal: enter or escape
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+bindsym $mod+g mode "gaps"
+
+mode "krita" {
+	set $mod Mod1
+        # back to normal: enter or escape
+        bindsym Escape set $mod Mod1
+        bindsym Return mode "default" && set $mod Mod1
+}
+
+bindsym $mod+` mode "krita"
+
+bindsym Control+Print exec gnome-screenshot -i
