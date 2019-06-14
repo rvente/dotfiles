@@ -13,6 +13,9 @@ adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-kr-fonts
 adobe-source-han-serif-otc-fonts
 adobe-source-han-serif-tw-fonts
+alsa-firmware
+alsa-oss
+alsa-tools
 alsa-utils
 antergos-alpm-hooks
 antergos-desktop-settings
@@ -57,6 +60,7 @@ clang
 cmake
 cmatrix
 code
+compton
 coreutils
 cower
 crda
@@ -71,6 +75,7 @@ dhcpcd
 diffutils
 digikam
 dmenu
+dmidecode
 dmraid
 dosfstools
 e2fsprogs
@@ -168,6 +173,7 @@ libcurl-openssl-1.0
 libdvdcss
 libgnome-keyring
 libreoffice-fresh
+libsass
 libtool
 libva-intel-driver
 licenses
@@ -224,6 +230,7 @@ pkgfile
 playerctl
 pm2ml
 polari
+postgresql
 procps-ng
 psmisc
 pulseaudio
@@ -246,6 +253,7 @@ reflector
 reiserfsprogs
 rofi
 s-nail
+sassc
 screenfetch
 scrot
 seahorse
@@ -345,3 +353,4 @@ xscreensaver
 yarn
 yay
 zathura-pdf-poppler
+zeal

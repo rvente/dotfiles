@@ -8,7 +8,7 @@ cp ~/.spacemacs ./
 cp ~/.bashrc ./
 cp ~/.gtkrc-2.0 ./
 cp ~/.spacemacs ./
-cp ~/.vimrc ./
+#cp ~/.vimrc ./
 cp ~/.xprofile ./
 
 pacman -Qqen > Packages

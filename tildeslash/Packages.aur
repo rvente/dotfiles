@@ -4,9 +4,9 @@ circstat
 compiz-bcop
 dpkg
 efiedit
+glfw-x11-git
 gnome-shell-extension-sound-output-device-chooser
 gnome-shell-pomodoro
-google-chrome
 gtypist-single-space
 j4-dmenu-desktop
 jekyll
@@ -26,6 +26,7 @@ osx-arc-white
 pandoc-include-code-bin
 paper-icon-theme
 po-debconf
+postman-bin
 powerline-fonts-git
 python-fontawesome
 rofi-file-browser-extended-git
@@ -38,6 +39,7 @@ sublime-text-3-imfix
 thinkfinger
 ttf-ms-fonts
 ubuntu-sounds
+volt
 wpa_actiond
 yaourt
 zotero

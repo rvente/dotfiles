@@ -170,7 +170,9 @@ set $urgent-bg-color     #E53935
 # screenlock
 bindsym XF86ScreenSaver            exec i3lock
 bindsym XF86Sleep                  exec i3lock
-bindsym $mod+Shift+s exec "i3lock && systemctl suspend"
+
+bindsym $mod+Shift+Control+9 exec "i3lock && systemctl suspend"
+bindsym $mod+Shift+Control+0 exec "i3lock && systemctl hibernate -i"
 
 
 # Pulse Audio controls
@@ -237,13 +239,12 @@ exec_always killall xcape
 exec_always killall compton
 exec_always killall feh
 
-
 # Startup Functions
 exec_always setxkbmap -option 'caps:ctrl_modifier'
 exec_always xcape -e 'Caps_Lock=Escape'
-exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper.png
+exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper_mod.png
 exec_always xset dpms 0 1900 2400
-#exec_always compton --config ~/.config/compton.conf -b
+exec_always compton --config ~/.config/compton.conf -b
 exec_always echo -e 'power on\nquit' | bluetoothctl
 
 # Enable Natural Scrolling
@@ -252,7 +253,6 @@ exec_always xinput set-prop 10 "libinput Natural Scrolling Enabled" 1
 smart_gaps on
 gaps inner 20
 gaps outer 0
-
 
 mode "gaps" {
         bindsym t gaps inner all set 20
@@ -277,4 +277,4 @@ mode "krita" {
 
 bindsym $mod+` mode "krita"
 
-bindsym Control+Print exec gnome-screenshot -i
+bindsym $mod+Print exec gnome-screenshot -i
