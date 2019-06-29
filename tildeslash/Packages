@@ -17,6 +17,7 @@ alsa-firmware
 alsa-oss
 alsa-tools
 alsa-utils
+android-tools
 antergos-alpm-hooks
 antergos-desktop-settings
 antergos-gnome-defaults-list
@@ -25,6 +26,7 @@ antergos-midnight-timers
 antergos-mirrorlist
 antergos-wallpapers
 apm
+arc-gtk-theme
 aspell-en
 aspell-fr
 astyle
@@ -94,12 +96,14 @@ file-roller
 filesystem
 finch
 findutils
+firefox
 flatpak
 flex
 gawk
 gcc
 gcc-libs
 gdb
+gdm
 gedit
 gettext
 ghc
@@ -157,7 +161,6 @@ i3-gaps
 i3blocks
 i3lock
 ibus-googlepinyin
-icecat
 inetutils
 inkscape
 intel-ucode
@@ -168,6 +171,7 @@ ipw2200-fw
 jfsutils
 krita
 less
+lib32-libcanberra
 lib32-mesa
 libcurl-openssl-1.0
 libdvdcss
@@ -192,6 +196,7 @@ make
 man-db
 man-pages
 mdadm
+meld
 mesa
 mesa-vdpau
 mlocate
@@ -231,6 +236,7 @@ playerctl
 pm2ml
 polari
 postgresql
+postgresql-old-upgrade
 procps-ng
 psmisc
 pulseaudio
@@ -238,12 +244,13 @@ pulseaudio-alsa
 pulseaudio-bluetooth
 purple-facebook
 purple-plugin-pack
+pv
+python-django
 python-flask
 python-gobject
 python-pip
 python-pyqt5
 python-pysmbc
-python2-gnomekeyring
 python2-pip
 qt5-styleplugins
 qt5ct
@@ -254,6 +261,7 @@ reiserfsprogs
 rofi
 s-nail
 sassc
+screen
 screenfetch
 scrot
 seahorse
@@ -269,6 +277,7 @@ systemd
 systemd-sysvcompat
 tar
 terminus-font
+testdisk
 texinfo
 texlive-bibtexextra
 texlive-core

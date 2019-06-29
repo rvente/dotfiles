@@ -244,7 +244,7 @@ exec_always setxkbmap -option 'caps:ctrl_modifier'
 exec_always xcape -e 'Caps_Lock=Escape'
 exec_always --no-startup-id feh --bg-scale ~/Pictures/Wallpapers/wallpaper_mod.png
 exec_always xset dpms 0 1900 2400
-exec_always compton --config ~/.config/compton.conf -b
+#exec_always compton --config ~/.config/compton.conf -b
 exec_always echo -e 'power on\nquit' | bluetoothctl
 
 # Enable Natural Scrolling
