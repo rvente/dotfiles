@@ -1,4 +1,5 @@
 accountsservice
+acpi
 acpi_call
 acpid
 adobe-source-code-pro-fonts
@@ -12,7 +13,11 @@ adobe-source-han-serif-jp-fonts
 adobe-source-han-serif-kr-fonts
 adobe-source-han-serif-otc-fonts
 adobe-source-han-serif-tw-fonts
+alsa-firmware
+alsa-oss
+alsa-tools
 alsa-utils
+android-tools
 antergos-alpm-hooks
 antergos-desktop-settings
 antergos-gnome-defaults-list
@@ -21,6 +26,7 @@ antergos-midnight-timers
 antergos-mirrorlist
 antergos-wallpapers
 apm
+arc-gtk-theme
 aspell-en
 aspell-fr
 astyle
@@ -28,6 +34,7 @@ atom
 audacity
 autoconf
 automake
+autorandr
 b43-fwcutter
 baobab
 bash
@@ -36,7 +43,9 @@ biber
 bind-tools
 binutils
 bison
+blueman
 bluez
+bluez-hid2hci
 bluez-utils
 brasero
 btrfs-progs
@@ -53,6 +62,7 @@ clang
 cmake
 cmatrix
 code
+compton
 coreutils
 cower
 crda
@@ -67,6 +77,7 @@ dhcpcd
 diffutils
 digikam
 dmenu
+dmidecode
 dmraid
 dosfstools
 e2fsprogs
@@ -83,12 +94,16 @@ ffmpegthumbnailer
 file
 file-roller
 filesystem
+finch
 findutils
+firefox
 flatpak
 flex
 gawk
 gcc
 gcc-libs
+gdb
+gdm
 gedit
 gettext
 ghc
@@ -120,6 +135,8 @@ gnome-terminal
 gnome-themes-extra
 gnome-tweaks
 gnome-weather
+gnote
+gpick
 grep
 groff
 grub
@@ -142,6 +159,7 @@ hplip
 htop
 i3-gaps
 i3blocks
+i3lock
 ibus-googlepinyin
 inetutils
 inkscape
@@ -153,11 +171,13 @@ ipw2200-fw
 jfsutils
 krita
 less
+lib32-libcanberra
 lib32-mesa
 libcurl-openssl-1.0
 libdvdcss
 libgnome-keyring
 libreoffice-fresh
+libsass
 libtool
 libva-intel-driver
 licenses
@@ -176,6 +196,7 @@ make
 man-db
 man-pages
 mdadm
+meld
 mesa
 mesa-vdpau
 mlocate
@@ -199,6 +220,7 @@ numix-icon-theme-square
 obs-studio
 octave
 openssh
+orca
 os-prober
 otf-font-awesome
 pacman
@@ -210,19 +232,25 @@ pciutils
 perl
 pkgconf
 pkgfile
+playerctl
 pm2ml
 polari
+postgresql
+postgresql-old-upgrade
 procps-ng
 psmisc
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
+purple-facebook
+purple-plugin-pack
+pv
+python-django
 python-flask
 python-gobject
 python-pip
 python-pyqt5
 python-pysmbc
-python2-gnomekeyring
 python2-pip
 qt5-styleplugins
 qt5ct
@@ -230,8 +258,12 @@ ranger
 rawtherapee
 reflector
 reiserfsprogs
+rofi
 s-nail
+sassc
+screen
 screenfetch
+scrot
 seahorse
 sed
 shadow
@@ -245,6 +277,7 @@ systemd
 systemd-sysvcompat
 tar
 terminus-font
+testdisk
 texinfo
 texlive-bibtexextra
 texlive-core
@@ -283,6 +316,7 @@ xf86-input-wacom
 xf86-video-fbdev
 xf86-video-intel
 xf86-video-vesa
+xfce4-terminal
 xfsprogs
 xorg-bdftopcf
 xorg-font-util
@@ -325,5 +359,7 @@ xorg-xwd
 xorg-xwininfo
 xorg-xwud
 xscreensaver
+yarn
 yay
 zathura-pdf-poppler
+zeal
