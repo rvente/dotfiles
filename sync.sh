@@ -5,6 +5,9 @@ cp ~/.config/ranger/* ./dotconfig/ranger/
 
 cd ./tildeslash/
 
+cp ~/.zshrc ./
+cp ~/.zshenv ./
+
 cp ~/.spacemacs ./
 cp ~/.bashrc ./
 cp ~/.gtkrc-2.0 ./
